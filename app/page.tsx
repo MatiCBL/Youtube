@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="flex flex-col px-8 py-4 md:flex-row flex-wrap gap-10 lg:gap-4 flex-1">
       {feedVideos.map((video) => (
-        <div className="flex flex-col gap-3 w-[340px]">
+        <div key={video.thumbnailUrl} className="flex flex-col gap-3 w-[340px]">
           <div className="">
             <Image
               src={video.thumbnailUrl}
